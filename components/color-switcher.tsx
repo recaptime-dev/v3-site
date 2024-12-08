@@ -1,11 +1,13 @@
-import { IconButton, useColorMode } from 'theme-ui'
+import { useColorMode } from 'theme-ui'
+import { IconButton } from 'theme-ui'
+import { IconButtonProps } from 'theme-ui'
 
-const ColorSwitcher = (props) => {
-  const [mode, setMode] = useColorMode()
+const ColorSwitcher = (props: IconButtonProps) => {
+  const [colorMode, setColorMode] = useColorMode()
   return (
     <IconButton
-      onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
-      title={`Switch to ${mode === 'dark' ? 'light' : 'dark'} mode`}
+      onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
+      title={`Switch to ${colorMode === 'dark' ? 'light' : 'dark'} mode`}
       sx={{
         position: 'absolute',
         top: [2, 3],

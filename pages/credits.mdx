@@ -1,0 +1,44 @@
+import { Box, Text } from 'theme-ui';
+import Letterhead from '../components/Letterhead';
+
+<Box
+  as="main"
+  sx={{
+    overflowX: 'hidden',
+    position: 'relative',
+    py: 4 // Add padding for better spacing
+  }}
+>
+  <Letterhead
+    title="Credits"
+    desc={
+      "The people who have helped make this project possible."
+    }
+    author={{
+      name: "@ajhalili2006",
+      avatar: "https://avatars.githubusercontent.com/u/34998342?v=4",
+      url: "https://wiki.recaptime.dev/profile/ajhalili2006"
+    }}
+  />
+
+  <Text
+    variant="eyebrow"
+    sx={{
+      color: 'text',
+      pb: 2,
+      position: "relative",
+      display: "block",
+    }}
+    as="h1"
+  >
+    _Last updated: 2024-12-08_
+  </Text>
+
+  We maintain this page to credit the people who have helped make our project possible.
+  If you have contributed to any of our project and are not listed here, please let us know.
+
+  ## Code contributors
+
+  TBD
+</Box>
+
